@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  jdownloader:
+    image: jlesage/jdownloader-2
+    container_name: jdownloader
+    restart: always
+    volumes:
+      - ./config:/config:rw
+    environment:
+      SET_CONTAINER_TIMEZONE: 'true'
+      CONTAINER_TIMEZONE: America/Santiago
+      TZ: America/Santiago
+      LANG: es_US.UTF-8
+    ports:
+      - 5800:5800
+volumes:
+  config:
+  jdownloads:

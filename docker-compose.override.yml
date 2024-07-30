@@ -1,0 +1,8 @@
+services:
+  jdownloader:
+    volumes:
+      - ./jdownloads:/output:rw
+    # environment:
+    #   WEB_AUTHENTICATION: 1
+    #   WEB_AUTHENTICATION_USERNAME: 'user'
+    #   WEB_AUTHENTICATION_PASSWORD: 'pass'
